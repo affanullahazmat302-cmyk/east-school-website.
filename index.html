@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The East School &amp; College Jehangira — Nowshera, KPK</title>
+<meta name="description" content="The East School & College Jehangira, Swabi Road, District Nowshera, Khyber Pakhtunkhwa. Quality education from Play Group to College (FSc). Admissions open.">
+<style>
+  :root{
+    --green:#0b5d3b; --green-2:#0e7a4d; --gold:#d4a017; --gold-2:#f0c94a;
+    --ink:#16241d; --muted:#5a6b62; --bg:#f6f8f6; --card:#ffffff; --line:#e3e9e4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Segoe UI",Tahoma,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+  h1,h2,h3{line-height:1.2}
+  img{max-width:100%}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+  /* ---------- Top bar ---------- */
+  .topbar{background:var(--green);color:#eafff3;font-size:.85rem}
+  .topbar .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:space-between;padding-top:8px;padding-bottom:8px}
+  .topbar a{color:#ffe9a8;text-decoration:none}
+  .topbar span b{color:#fff}
+
+  /* ---------- Nav ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .logo{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--green),var(--green-2));display:grid;place-items:center;color:#fff;font-weight:800;font-size:1.25rem;box-shadow:0 6px 16px rgba(11,93,59,.25)}
+  .brand-name{font-weight:800;color:var(--green);font-size:1.05rem;letter-spacing:.2px}
+  .brand-sub{font-size:.72rem;color:var(--muted);letter-spacing:1.4px;text-transform:uppercase}
+  .links{display:flex;gap:4px;list-style:none;align-items:center}
+  .links a{text-decoration:none;padding:9px 13px;border-radius:10px;font-weight:600;font-size:.92rem;color:var(--ink)}
+  .links a:hover{background:#eef6f0;color:var(--green)}
+  .cta{background:var(--gold);color:#3a2c00!important;font-weight:800}
+  .cta:hover{background:var(--gold-2)!important}
+  .burger{display:none;background:none;border:0;font-size:1.6rem;color:var(--green);cursor:pointer}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;overflow:hidden;background:linear-gradient(120deg,#083d27 0%,var(--green) 55%,var(--green-2) 100%);color:#fff}
+  .hero::after{content:"";position:absolute;inset:0;background:
+      radial-gradient(600px 300px at 85% 15%,rgba(240,201,74,.25),transparent 60%),
+      radial-gradient(500px 260px at 10% 90%,rgba(255,255,255,.10),transparent 60%)}
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:72px;padding-bottom:72px}
+  .kicker{display:inline-block;background:rgba(240,201,74,.18);border:1px solid rgba(240,201,74,.55);color:var(--gold-2);padding:6px 14px;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:18px}
+  .hero h1{font-size:clamp(2rem,4.4vw,3.2rem);font-weight:900;margin-bottom:16px}
+  .hero h1 span{color:var(--gold-2)}
+  .hero p.lead{font-size:1.06rem;color:#dcf3e6;max-width:56ch;margin-bottom:28px}
+  .btnrow{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;text-decoration:none;font-weight:800;padding:13px 24px;border-radius:12px;font-size:.95rem;transition:.2s}
+  .btn.gold{background:var(--gold);color:#3a2c00}
+  .btn.gold:hover{background:var(--gold-2);transform:translateY(-2px)}
+  .btn.ghost{border:2px solid rgba(255,255,255,.55);color:#fff}
+  .btn.ghost:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+  .herocard{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:26px;backdrop-filter:blur(6px)}
+  .herocard h3{color:var(--gold-2);margin-bottom:14px;font-size:.95rem;letter-spacing:1px;text-transform:uppercase}
+  .herocard ul{list-style:none}
+  .herocard li{padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.18);display:flex;gap:10px;font-size:.93rem;color:#eafff3}
+  .herocard li:last-child{border:0}
+  .herocard li::before{content:"✔";color:var(--gold-2);font-weight:900}
+
+  /* ---------- Stats ---------- */
+  .stats{background:#fff;border-bottom:1px solid var(--line)}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-top:34px;padding-bottom:34px}
+  .stat{text-align:center;padding:8px}
+  .stat b{display:block;font-size:1.9rem;color:var(--green)}
+  .stat span{color:var(--muted);font-size:.88rem}
+
+  /* ---------- Sections ---------- */
+  section{padding:74px 0;scroll-margin-top:84px}
+  .sec-alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .sec-head{max-width:720px;margin-bottom:44px}
+  .sec-head .kicker2{display:inline-block;color:var(--green-2);font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.78rem;margin-bottom:10px}
+  .sec-head h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;color:var(--ink)}
+  .sec-head p{color:var(--muted);margin-top:12px}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px;transition:.2s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(11,93,59,.10)}
+  .card .icon{width:46px;height:46px;border-radius:12px;background:#e8f5ee;color:var(--green);display:grid;place-items:center;font-size:1.3rem;margin-bottom:14px}
+  .card h3{font-size:1.05rem;margin-bottom:8px;color:var(--green)}
+  .card p{color:var(--muted);font-size:.92rem}
+  .checklist{list-style:none}
+  .checklist li{padding:9px 0 9px 30px;position:relative;color:var(--muted)}
+  .checklist li::before{content:"✔";position:absolute;left:0;top:9px;color:var(--green-2);font-weight:900}
+
+  .quote{border-left:4px solid var(--gold);background:#fffbe9;padding:18px 22px;border-radius:0 14px 14px 0;color:#6b5714;font-style:italic;margin-top:18px}
+
+  /* ---------- Academics table ---------- */
+  .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:#fff}
+  table{width:100%;border-collapse:collapse;min-width:640px}
+  th{background:var(--green);color:#fff;text-align:left;padding:13px 16px;font-size:.88rem;letter-spacing:.5px}
+  td{padding:12px 16px;border-top:1px solid var(--line);font-size:.92rem;color:var(--muted)}
+  tr:nth-child(even) td{background:#f4faf6}
+  .pill{display:inline-block;background:#e8f5ee;color:var(--green);padding:3px 10px;border-radius:999px;font-size:.78rem;font-weight:700}
+
+  /* ---------- Admissions steps ---------- */
+  .steps{counter-reset:step;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;position:relative}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;top:-16px;left:22px;width:34px;height:34px;border-radius:10px;background:var(--gold);color:#3a2c00;font-weight:900;display:grid;place-items:center;box-shadow:0 6px 12px rgba(212,160,23,.35)}
+  .step h3{font-size:.98rem;margin:10px 0 6px;color:var(--green)}
+  .step p{font-size:.88rem;color:var(--muted)}
+
+  /* ---------- Faculty ---------- */
+  .fac{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+  .avatar{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--green-2));color:#fff;display:grid;place-items:center;font-weight:800;font-size:1.15rem;flex-shrink:0}
+  .fac b{display:block;color:var(--ink)}
+  .fac span{font-size:.82rem;color:var(--muted)}
+  .facgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+
+  /* ---------- Check East ---------- */
+  .checkeast{background:linear-gradient(135deg,#083d27,var(--green) 60%,var(--green-2));color:#fff}
+  .checkeast .sec-head h2{color:#fff}
+  .checkeast .sec-head p{color:#cfe8da}
+  .checkeast .kicker2{color:var(--gold-2)!important}
+  .ce-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:820px}
+  .ce-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:30px;text-decoration:none;display:block;transition:.25s;backdrop-filter:blur(6px)}
+  .ce-card:hover{transform:translateY(-5px);background:rgba(255,255,255,.14);box-shadow:0 18px 36px rgba(0,0,0,.25)}
+  .ce-icon{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:16px}
+  .ce-icon.map{background:rgba(240,201,74,.2);border:1px solid rgba(240,201,74,.5)}
+  .ce-icon.fb{background:rgba(66,103,178,.35);border:1px solid rgba(120,160,255,.55)}
+  .ce-card h3{color:#fff;font-size:1.1rem;margin-bottom:6px}
+  .ce-card p{color:#cfe8da;font-size:.9rem;margin-bottom:14px}
+  .ce-go{display:inline-block;background:var(--gold);color:#3a2c00;font-weight:800;padding:10px 20px;border-radius:10px;font-size:.88rem}
+
+  /* ---------- Contact ---------- */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+  .cbox{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px}
+  .citem{display:flex;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line)}
+  .citem:last-child{border:0}
+  .citem .ci{width:42px;height:42px;border-radius:12px;background:#e8f5ee;display:grid;place-items:center;color:var(--green);font-size:1.15rem;flex-shrink:0}
+  .citem b{display:block;font-size:.95rem}
+  .citem span{color:var(--muted);font-size:.88rem}
+  form label{display:block;font-size:.85rem;font-weight:700;margin:14px 0 6px;color:var(--ink)}
+  form input,form select,form textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px 13px;font-size:.92rem;font-family:inherit;background:#fbfdfc}
+  form input:focus,form select:focus,form textarea:focus{outline:2px solid var(--green-2);border-color:transparent}
+  .formbtn{margin-top:18px;width:100%;border:0;cursor:pointer;background:var(--green);color:#fff;font-weight:800;padding:13px;border-radius:12px;font-size:.95rem}
+  .formbtn:hover{background:var(--green-2)}
+  .formnote{display:none;margin-top:12px;background:#e8f5ee;color:var(--green);padding:11px 14px;border-radius:10px;font-size:.88rem;font-weight:600}
+
+  footer{background:#0a3524;color:#cfe8da;padding:44px 0 26px}
+  .footgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:30px}
+  footer h4{color:var(--gold-2);margin-bottom:12px;font-size:.95rem}
+  footer a{color:#cfe8da;text-decoration:none}
+  footer a:hover{color:#fff}
+  footer li{list-style:none;padding:4px 0;font-size:.9rem}
+  .copy{border-top:1px solid rgba(255,255,255,.15);margin-top:30px;padding-top:18px;font-size:.82rem;color:#9dc3ae;text-align:center}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:.7s ease}
+  .reveal.show{opacity:1;transform:none}
+
+  @media(max-width:900px){
+    .hero .wrap,.grid2,.contact-grid,.footgrid,.ce-grid{grid-template-columns:1fr}
+    .grid3{grid-template-columns:1fr 1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .facgrid{grid-template-columns:1fr}
+    .stats .wrap{grid-template-columns:1fr 1fr}
+    .links{position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:12px;border-bottom:1px solid var(--line);display:none;box-shadow:0 20px 30px rgba(0,0,0,.08)}
+    .links.open{display:flex}
+    .links a{padding:12px 14px}
+    .burger{display:block}
+  }
+  @media(max-width:560px){.grid3,.steps{grid-template-columns:1fr}}
+</style>
+<meta name="keywords" content="The East School and College Jehangira, school in Jehangira, best school Nowshera, college in Jehangira, FSc Pre-Engineering, FSc Pre-Medical, BISE Mardan school, admission open Nowshera">
+<meta name="author" content="The East School & College Jehangira">
+<link rel="canonical" href="https://www.eastschooljehangira.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The East School & College Jehangira — Nowshera, KPK">
+<meta property="og:description" content="Quality education from Play Group to College (FSc Pre-Engineering, Pre-Medical, ICS). Admissions open. Swabi Road, Jehangira, District Nowshera.">
+<meta property="og:url" content="https://www.eastschooljehangira.com/">
+<meta property="og:locale" content="en_PK">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The East School & College Jehangira — Nowshera, KPK">
+<meta name="twitter:description" content="Play Group to College on Swabi Road, Jehangira. BISE Mardan affiliated. Admissions open.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "School",
+  "name": "The East School & College Jehangira",
+  "description": "Private school and college on Swabi Road, Jehangira, District Nowshera, KPK. Classes from Play Group to FSc (Pre-Engineering, Pre-Medical, Computer Science). Affiliated with BISE Mardan.",
+  "url": "https://www.eastschooljehangira.com/",
+  "telephone": "+92-923-510760",
+  "email": "eastjehangira@yahoo.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Swabi Road, Jehangira",
+    "addressLocality": "District Nowshera",
+    "addressRegion": "Khyber Pakhtunkhwa",
+    "addressCountry": "PK"
+  },
+  "sameAs": ["https://www.facebook.com/EastSchoolJehangira/"]
+}
+</script>
+</head>
+<body>
+
+<!-- ======= TOP BAR ======= -->
+<div class="topbar">
+  <div class="wrap">
+    <div><span>📍 <b>Swabi Road, Jehangira, District Nowshera</b>, Khyber Pakhtunkhwa, Pakistan</span></div>
+    <div><span>📞 <a href="tel:+92923510760">+92 923 510760</a> &nbsp;|&nbsp; 📱 <a href="tel:+923129100656">0312-9100656</a> &nbsp;|&nbsp; ✉️ <a href="mailto:eastjehangira@yahoo.com">eastjehangira@yahoo.com</a></span></div>
+  </div>
+</div>
+
+<!-- ======= NAV ======= -->
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#home">
+        <span class="logo">E</span>
+        <span>
+          <span class="brand-name">The East School &amp; College</span><br>
+          <span class="brand-sub">Jehangira · Nowshera</span>
+        </span>
+      </a>
+      <ul class="links" id="navlinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="#contact" class="cta">Contact Us</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+    </nav>
+  </div>
+</header>
+
+<!-- ======= HERO ======= -->
+<section class="hero" id="home" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="kicker">Admissions Open · Play Group to College</span>
+      <h1>Shaping Minds, <span>Building Futures</span> in Jehangira</h1>
+      <p class="lead">The East School &amp; College, Swabi Road Jehangira, is a leading private institution of District Nowshera affiliated with the Mardan Board — nurturing highly educated, disciplined and peace-loving citizens in the light of the ideology of Pakistan.</p>
+      <div class="btnrow">
+        <a href="#admissions" class="btn gold" data-scroll="#admissions">Apply for Admission</a>
+        <a href="#about" class="btn ghost" data-scroll="#about">Discover The East</a>
+      </div>
+    </div>
+    <div class="herocard">
+      <h3>Why The East?</h3>
+      <ul>
+        <li>Registered with PSRA (KP) — Higher Secondary School, Jehangira</li>
+        <li>Classes from Play Group &amp; Nursery up to College (FSc / FA streams)</li>
+        <li>Merit-based admissions with a transparent entry-test system</li>
+        <li>Special fee concessions for orphans &amp; deserving students</li>
+        <li>Experienced faculty led by a dedicated Principal</li>
+        <li>Focus on academic excellence, character &amp; co-curricular growth</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======= STATS ======= -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat reveal"><b>Play Group → College</b><span>Full academic ladder</span></div>
+    <div class="stat reveal"><b>100%</b><span>Merit-based admissions</span></div>
+    <div class="stat reveal"><b>1 Seat / Class</b><span>Reserved for orphans &amp; the poor</span></div>
+    <div class="stat reveal"><b>Since Years</b><span>Serving Jehangira &amp; Nowshera</span></div>
+  </div>
+</div>
+
+<!-- ======= ABOUT ======= -->
+<section id="about">
+  <div class="wrap grid2">
+    <div class="reveal">
+      <div class="sec-head" style="margin-bottom:20px">
+        <span class="kicker2">About Us</span>
+        <h2>A Legacy of Quality Education in District Nowshera</h2>
+      </div>
+      <p style="color:var(--muted)">The East School &amp; College, located on Swabi Road in Jehangira, District Nowshera, Khyber Pakhtunkhwa, is one of the area's most respected private institutions. The school aims to produce highly educated and peace-loving citizens in the light of the ideology of Islam and Pakistan, and to sustain and develop quality education for the children of Jehangira and surrounding areas.</p>
+      <p style="color:var(--muted);margin-top:14px">From early years through matriculation and college-level studies, The East combines strong academic foundations with character building, discipline and modern teaching methodologies — preparing students for board examinations of BISE Mardan and beyond.</p>
+      <div class="quote">"To produce highly educated and peace-loving citizens in the light of the ideology of Islam and Pakistan." — The East School &amp; College</div>
+    </div>
+    <div class="reveal">
+      <div class="sec-head" style="margin-bottom:20px">
+        <span class="kicker2">Our Mission</span>
+        <h2>What Drives Us Every Day</h2>
+      </div>
+      <ul class="checklist">
+        <li><b>Quality education for all</b> — sustained and continuously developed standards of teaching and learning.</li>
+        <li><b>Character first</b> — honesty, discipline, respect and peace-loving values woven into daily school life.</li>
+        <li><b>Merit &amp; fairness</b> — admissions, promotions and concessions governed by transparent merit criteria.</li>
+        <li><b>Care for the needy</b> — reserved seats and fee concessions for orphans, the poor and large families.</li>
+        <li><b>Board success</b> — rigorous preparation for BISE Mardan examinations with consistent results.</li>
+        <li><b>Whole-child growth</b> — academics balanced with sports, activities and hands-on learning.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======= ACADEMICS ======= -->
+<section class="sec-alt" id="academics">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker2">Academics</span>
+      <h2>Programs From Early Years to College</h2>
+      <p>A complete academic journey under one roof — early childhood education, primary, middle, secondary (Matric) and higher secondary college classes.</p>
+    </div>
+    <div class="grid3 reveal" style="margin-bottom:34px">
+      <div class="card">
+        <div class="icon">🧸</div>
+        <h3>Early Years</h3>
+        <p><span class="pill">Play Group</span> <span class="pill">Nursery</span> <span class="pill">Prep</span></p>
+        <p style="margin-top:10px">A caring, activity-based start where young children learn through play, phonics, rhymes and motor-skill development.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📚</div>
+        <h3>Primary &amp; Middle</h3>
+        <p><span class="pill">Class I – VIII</span></p>
+        <p style="margin-top:10px">Strong foundations in English, Urdu, Mathematics and Science with regular assessment, reading culture and moral education.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎓</div>
+        <h3>Secondary (Matric)</h3>
+        <p><span class="pill">Class IX – X</span> <span class="pill">BISE Mardan</span></p>
+        <p style="margin-top:10px">Focused board preparation in Science group subjects — Physics, Chemistry, Biology / Computer Science — with test sessions and mentoring.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔬</div>
+        <h3>FSc — Pre-Medical</h3>
+        <p><span class="pill">College</span></p>
+        <p style="margin-top:10px">Intermediate with Biology for students aiming at MBBS, BDS, pharmacy and allied health sciences.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚙️</div>
+        <h3>FSc — Pre-Engineering</h3>
+        <p><span class="pill">College</span></p>
+        <p style="margin-top:10px">Intermediate with Mathematics, Physics and Chemistry — the classic route to engineering universities (UET, NUST, etc.) and applied-science careers.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>FSc — Computer Science</h3>
+        <p><span class="pill">College</span></p>
+        <p style="margin-top:10px">Intermediate with Computer Science, Mathematics and Physics — a pathway to engineering, IT and software careers.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🕌</div>
+        <h3>Islamic Studies &amp; Values</h3>
+        <p><span class="pill">All Classes</span></p>
+        <p style="margin-top:10px">Nazra Quran, Islamic studies and character education are integral to life at The East, in line with the school's founding vision.</p>
+      </div>
+    </div>
+
+    <div class="sec-head reveal" style="margin-bottom:20px">
+      <span class="kicker2">Fee Structure</span>
+      <h2>Affordable, Transparent Fees</h2>
+      <p>The East believes quality education must remain affordable. Fees are structured clearly, with concessions for deserving families. (Indicative school-section fees — please confirm current rates at the office.)</p>
+    </div>
+    <div class="tablewrap reveal">
+      <table>
+        <thead><tr><th>Class</th><th>Admission Fee (Rs.)</th><th>Promotion Fee (Rs.)</th><th>Monthly Fee (Rs.)</th></tr></thead>
+        <tbody>
+          <tr><td>Play Group + Nursery</td><td>500</td><td>—</td><td>500</td></tr>
+          <tr><td>Prep + Class One</td><td>500</td><td>400</td><td>600</td></tr>
+          <tr><td>Class Two + Three</td><td>700</td><td>500</td><td>650</td></tr>
+          <tr><td>Class 4th + 5th</td><td>900</td><td>600</td><td>750</td></tr>
+          <tr><td>Class 6th + 7th</td><td>1100</td><td>700</td><td>850</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ======= ADMISSIONS ======= -->
+<section id="admissions">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker2">Admissions</span>
+      <h2>How to Join The East</h2>
+      <p>Admission is based on merit. Except Play Group and Nursery, all admissions require an entry test, subject to the availability of seats in the respective class.</p>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><h3>Registration</h3><p>Register before the closing date at the school office, Swabi Road Jehangira, to appear in the entry test.</p></div>
+      <div class="step"><h3>Entry Test</h3><p>Held every year in the 1st week of April, based on the courses of the previous class. Result is displayed the next day.</p></div>
+      <div class="step"><h3>Merit List</h3><p>Minimum 50% marks required in the primary section entry test; 70% for middle and high sections.</p></div>
+      <div class="step"><h3>Enrollment</h3><p>Complete admission formalities and fee deposit to secure the seat. Dues are payable by the 10th of each month.</p></div>
+    </div>
+
+    <div class="grid2 reveal" style="margin-top:44px">
+      <div class="card">
+        <div class="icon">📝</div>
+        <h3>Entry Test Subjects — Grades 1–7</h3>
+        <ul class="checklist">
+          <li>Mathematics</li>
+          <li>English</li>
+          <li>Science</li>
+          <li>Urdu</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon">🧪</div>
+        <h3>Entry Test Subjects — Grades 8–10</h3>
+        <ul class="checklist">
+          <li>Mathematics</li>
+          <li>English</li>
+          <li>Physics</li>
+          <li>Chemistry</li>
+          <li>Biology</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid2 reveal" style="margin-top:22px">
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h3>Fee Concessions</h3>
+        <ul class="checklist">
+          <li>One seat reserved in every class for poor students and orphans — merit criteria apply where candidates compete.</li>
+          <li>Half-fee concession for families with more than two siblings (third and junior-most child).</li>
+          <li>The Principal may allow concession for education-department employees at his discretion.</li>
+          <li>No concession is admissible for absence periods.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon">📋</div>
+        <h3>Fee Rules</h3>
+        <ul class="checklist">
+          <li>All dues must be deposited by the 10th of each month.</li>
+          <li>Dues must be cleared before examinations begin, otherwise the student cannot sit the exam.</li>
+          <li>Summer-vacation fees are deposited in advance.</li>
+          <li>Late fee fine: Rs. 10 per day.</li>
+          <li>Names of students with 3 months of unpaid dues are struck off the school roll.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CHECK EAST ======= -->
+<section class="checkeast" id="checkeast">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker2">Check East</span>
+      <h2>Find Us &amp; Follow Us</h2>
+      <p>Want to see the campus before applying? Check our exact location on Google Maps or follow our Facebook page for news, results and admission updates.</p>
+    </div>
+    <div class="ce-grid reveal">
+      <a class="ce-card" href="https://www.google.com/maps/search/?api=1&query=The+East+School+%26+College+Jehangira+Nowshera" target="_blank" rel="noopener">
+        <span class="ce-icon map">🗺️</span>
+        <h3>Location on Google Maps</h3>
+        <p>See exactly where The East School &amp; College is on Swabi Road, Jehangira — get directions straight to the campus gate.</p>
+        <span class="ce-go">Open in Google Maps →</span>
+      </a>
+      <a class="ce-card" href="https://www.facebook.com/EastSchoolJehangira/" target="_blank" rel="noopener">
+        <span class="ce-icon fb">📘</span>
+        <h3>Our Facebook Page</h3>
+        <p>Follow @EastSchoolJehangira for the latest announcements, exam results, photos of school events and admission alerts.</p>
+        <span class="ce-go">Open Facebook Page →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FACULTY ======= -->
+<section class="sec-alt" id="faculty">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker2">Our Team</span>
+      <h2>Leadership &amp; Key Staff</h2>
+      <p>The East is guided by an experienced management team, reachable directly for parents and guardians.</p>
+    </div>
+    <div class="facgrid reveal">
+      <div class="fac"><span class="avatar">NH</span><div><b>Niaz Hussain</b><span>Chief Executive · 0312-9100656</span></div></div>
+      <div class="fac"><span class="avatar">IH</span><div><b>Ihtesham ul Haq</b><span>Principal · 0307-8277969</span></div></div>
+      <div class="fac"><span class="avatar">MA</span><div><b>M. Azmat Jehangir</b><span>System Coordinator · 0923-200230</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CONTACT ======= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker2">Contact</span>
+      <h2>Visit or Call Us</h2>
+      <p>We would love to meet you. Drop by the campus on Swabi Road, Jehangira, or reach us by phone or email.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="cbox">
+        <div class="citem"><span class="ci">📍</span><div><b>Address</b><span>The East School &amp; College, Swabi Road, Jehangira, District Nowshera, Khyber Pakhtunkhwa, Pakistan</span></div></div>
+        <div class="citem"><span class="ci">📞</span><div><b>Office Phone</b><span>+92 923 510760</span></div></div>
+        <div class="citem"><span class="ci">📱</span><div><b>Chief Executive — Niaz Hussain</b><span>0312-9100656</span></div></div>
+        <div class="citem"><span class="ci">🎓</span><div><b>Principal — Ihtesham ul Haq</b><span>0307-8277969</span></div></div>
+        <div class="citem"><span class="ci">✉️</span><div><b>Email</b><span>eastjehangira@yahoo.com</span></div></div>
+        <div class="citem"><span class="ci">🕘</span><div><b>Office Hours</b><span>Mon – Sat, during school hours (contact office for timings)</span></div></div>
+      </div>
+      <div class="cbox">
+        <h3 style="color:var(--green);margin-bottom:6px">Admission Inquiry Form</h3>
+        <p style="color:var(--muted);font-size:.88rem">Send us your details and the school office will contact you.</p>
+        <form id="inqForm">
+          <label for="fname">Student Name</label>
+          <input id="fname" type="text" required placeholder="Full name of student">
+          <label for="fclass">Class Applying For</label>
+          <select id="fclass" required>
+            <option value="">Select class…</option>
+            <option>Play Group / Nursery</option><option>Prep / Class 1</option>
+            <option>Class 2 – 5</option><option>Class 6 – 8</option>
+            <option>Class 9 – 10 (Matric)</option><option>FSc / College</option>
+          </select>
+          <label for="fphone">Parent / Guardian Phone</label>
+          <input id="fphone" type="tel" required placeholder="03xx-xxxxxxx">
+          <label for="fmsg">Message (optional)</label>
+          <textarea id="fmsg" rows="3" placeholder="Any questions about admissions, fees or transport…"></textarea>
+          <button class="formbtn" type="submit">Submit Inquiry</button>
+          <div class="formnote" id="formnote">✔ Thank you! Your inquiry has been noted. Please also confirm by calling the office at +92 923 510760.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer>
+  <div class="wrap">
+    <div class="footgrid">
+      <div>
+        <h4>The East School &amp; College Jehangira</h4>
+        <p style="font-size:.9rem">Quality education from Play Group to College on Swabi Road, Jehangira, District Nowshera — building educated, disciplined and peace-loving citizens of Pakistan.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#academics">Academics &amp; Fees</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#checkeast">Check East — Maps &amp; Facebook</a></li>
+          <li><a href="#faculty">Faculty</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>📍 Swabi Road, Jehangira, Nowshera</li>
+          <li>📞 +92 923 510760</li>
+          <li>📱 0312-9100656</li>
+          <li>✉️ eastjehangira@yahoo.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">© 2026 The East School &amp; College Jehangira, Nowshera. All rights reserved. · Registered with PSRA (Khyber Pakhtunkhwa)</div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  const burger=document.getElementById('burger'),links=document.getElementById('navlinks');
+  burger.addEventListener('click',()=>links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+
+  // Scroll reveal
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // CTA buttons: guaranteed smooth-scroll on click (works even if native anchor jump fails)
+  document.querySelectorAll('[data-scroll]').forEach(btn=>{
+    btn.addEventListener('click',e=>{
+      e.preventDefault();
+      const t=document.querySelector(btn.getAttribute('data-scroll'));
+      if(t){ t.scrollIntoView({behavior:'smooth',block:'start'}); }
+    });
+  });
+
+  // Demo inquiry form
+  document.getElementById('inqForm').addEventListener('submit',e=>{
+    e.preventDefault();
+    document.getElementById('formnote').style.display='block';
+    e.target.querySelectorAll('input,select,textarea').forEach(f=>f.value='');
+  });
+</script>
+</body>
+</html>
